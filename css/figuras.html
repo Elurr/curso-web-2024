@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear figuras con css</title>
+</head>
+<style>
+    .cuadrado {
+        border: 1px solid black;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+    .naranja {
+        background-color: orange;
+    }
+    .morado {
+        background-color: purple;
+    }
+    .degradado {
+        background: linear-gradient(45deg, lightblue, blue);
+    }
+
+    .circulo {
+        border: 1px solid black;
+        background: linear-gradient(90deg, pink, rgb(105, 192, 105));
+        /* la clave para convertir un cuadrado en un circulo: */
+        border-radius: 50%;
+        margin: 10px;
+    }
+    .txiki {
+        height: 15px;
+        width: 15px;
+    }
+    .mediano {
+        height: 30px;
+        width: 30px; 
+    }
+    .grande {
+        height: 60px;
+        width: 60px;
+    }
+</style>
+<body>
+    <h1>Figuras</h1>
+    <p>Es posible crear figuras geométricas usando html y css</p>
+    <h2>Cuadrados</h2>
+    <p>Vamos a crear 3 cuadrados de distinto color, uno de ellos degradado</p>
+    <div class="cuadrado naranja"></div>
+    <div class="cuadrado morado"></div>
+    <div class="cuadrado degradado"></div>
+
+    <h2>Círculos</h2>
+    <div class="circulo txiki"></div>
+    <div class="circulo mediano"></div>
+    <div class="circulo grande"></div>
+
+    
+</body>
+</html>
