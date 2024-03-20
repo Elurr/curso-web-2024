@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparativa reproductores MP3</title>
 </head>
+<style>
+    table, table * {
+        border: 1px solid black;
+    }
+</style>
 <body>
     <h1>Comparativa reproductores MP3</h1>
 
@@ -12,8 +17,9 @@
         <thead>
             <tr>
                 <td></td>
-                <td>MP3 mini</td>
-                <td>MP3 grande</td>
+                <!-- para seleccionar varias líneas al mismo tiempo: Alt+Shift+clic izquierdo y arrastrar -->
+                <td colspan="3">MP3 mini</td>
+                <td colspan="2">MP3 grande</td>
             </tr>
         </thead>
         <tbody>
@@ -30,20 +36,20 @@
                 <td>*</td>
                 <td>****</td>
                 <td>*</td>
-                <td>**</td>
+                <td colspan="2">**</td>
             </tr>
             <tr>
                 <th>Pantalla</th>
-                <td></td>
-                <td></td>
+                <td colspan="3"></td>
+                <td colspan="2"></td>
             </tr>
             <tr>
-                <th>Tiempo de carga</th>
-                <td></td>
-                <td></td>
+                <th rowspan="2">Tiempo de carga</th>
+                <td rowspan="2" colspan="3"></td>
+                <td colspan="2"></td>
             </tr>
             <tr>
-                <td></td>
+                <td colspan="2"></td>
             </tr>
         </tbody>
     </table>
