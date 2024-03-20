@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparativa reproductores MP3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <style>
-    table, table * {
+    table, th, td {
         border: 1px solid black;
+    }
+    p, th, td {
+        /* border: 1px solid skyblue; */
+        text-align: center;
+    }
+    th, td {
+        padding: 5px;
+    }
+    .txiki {
+        font-size: 2rem;
+    }
+    .grande {
+        font-size: 6rem;
+    }
+    .gris {
+        color: gray;
+    }
+    .morado {
+        color: blueviolet;
+    }
+    .negro {
+        color: rgb(45, 40, 40);
+    }
+    .verde {
+        color: greenyellow;
+    }
+    .azul {
+        color: deepskyblue;
+    }
+    .rosa {
+        color: pink;
     }
 </style>
 <body>
@@ -18,41 +50,74 @@
             <tr>
                 <td></td>
                 <!-- para seleccionar varias líneas al mismo tiempo: Alt+Shift+clic izquierdo y arrastrar -->
-                <td colspan="3">MP3 mini</td>
-                <td colspan="2">MP3 grande</td>
+                <td colspan="3">
+                    <p>
+                        <i class="bi bi-music-player-fill txiki gris"></i>
+                        <i class="bi bi-music-player-fill txiki morado"></i>
+
+                    </p>
+                    <p>MP3 mini</p>
+                </td>
+                <td colspan="2">
+                    <p>
+                        <i class="bi bi-music-player-fill grande gris"></i>
+                        <i class="bi bi-music-player-fill grande morado"></i>
+
+                    </p>
+                    <p>MP3 grande</p>
+                </td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th>Capacidad de almacenamiento</th>
-                <td>4GB (1.000 canciones)</td>
-                <td>8GB (2.000 canciones)</td>
-                <td>16GB (4.000 canciones)</td>
-                <td>30GB (7.500 canciones)</td>
-                <td>80GB (20.000 canciones)</td>
+                <th>Capacidad de<br> almacenamiento</th>
+                <td>4GB<br> (1.000<br> canciones)</td>
+                <td>8GB<br> (2.000<br> canciones)</td>
+                <td>16GB<br> (4.000<br> canciones)</td>
+                <td>30GB<br> (7.500<br> canciones)</td>
+                <td>80GB<br> (20.000<br> canciones)</td>
             </tr>
             <tr>
                 <th>Colores</th>
-                <td>*</td>
                 <td>
-                    <p>***<br>*</p>
+                    <p>
+                        <i class="bi bi-circle-fill gris"></i>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <i class="bi bi-circle-fill negro"></i>
+                        <i class="bi bi-circle-fill verde"></i>
+                        <i class="bi bi-circle-fill azul"></i>
+                        <br>
+                        <i class="bi bi-circle-fill rosa"></i>
+                    </p>
                     
                 </td>
-                <td>*</td>
-                <td colspan="2">**</td>
+                <td>
+                    <p>
+                        <i class="bi bi-circle-fill negro"></i>
+                    </p>
+                </td>
+                <td colspan="2">
+                    <p>
+                        <i class="bi bi-circle-fill gris"></i>
+                        <i class="bi bi-circle-fill negro"></i>
+                    </p>
+                </td>
             </tr>
             <tr>
                 <th>Pantalla</th>
-                <td colspan="3">LCD de 3 cm (diagonal) con retroiluminación</td>
-                <td colspan="2">LCD de 6 cm (diagonal) con retroiluminación</td>
+                <td colspan="3">LCD de 3 cm (diagonal) con<br> retroiluminación</td>
+                <td colspan="2">LCD de 6 cm (diagonal)<br> con retroiluminación</td>
             </tr>
             <tr>
-                <th rowspan="2">Tiempo de carga</th>
+                <th rowspan="2">Tiempo de<br> carga</th>
                 <td rowspan="2" colspan="3">Unas 3 horas</td>
                 <td colspan="2">Unas 4 horas</td>
             </tr>
             <tr>
-                <td colspan="2">Unas 2 horas para alcanzar el 80% de la capacidad</td>
+                <td colspan="2">Unas 2 horas para<br> alcanzar el 80% de la<br> capacidad</td>
             </tr>
         </tbody>
     </table>
