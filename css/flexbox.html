@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="stylesheet" href="menu-vertical.css">
+</head>
+
+<body>
+    <h1>Alineamiento con Flexbox</h1>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <p>
+        El contenedor se convierte en <b>flexible</b> al asignarle la propiedad <b>display: flex</b>.
+    </p>
+
+    <h2>flex vertical</h2>
+    <div class="flex-container vertical">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h2>Alineamiento en el eje principal (horizontal por defecto)</h2>
+    <div class="flex-container horizontal">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h2>Alineamiento en el eje cruzado</h2>
+    <div class="flex-container cruzado">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <h2>Subcontenedores</h2>
+    <div class="flex-container menu">
+        <div class="flex-container izq">
+            <div>Galería</div>
+            <div class="home">Home</div>
+            <div>Servicios</div>
+        </div>
+
+        <div class="flex-container der">
+            <div>Plantilla</div>
+            <div>Contacto</div>
+        </div>
+    </div>
+    <h3>Menú vertical</h3>
+    <div class="contenedor-mv">
+        <div class="boton-mv">Link</div>
+        <div class="boton-mv">Link</div>
+        <div class="boton-mv">Link</div>
+        <div class="boton-mv">Home</div>
+    </div>
+
+
+    <footer></footer>
+</body>
+
+</html>

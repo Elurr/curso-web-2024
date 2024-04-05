@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de prueba de HTML5</title>
+</head>
+<style>
+    body {
+        background: rgb(26, 113, 235);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        animation: fondo 10s infinite alternate;
+        margin: 0;
+    }
+
+    form {
+        background-color: rgba(0, 0, 0, 0.129);
+        padding: 0 15px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input#color {
+        border-radius: 50%;
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    @keyframes fondo {
+        from {background-color: white}
+        to {background-color: rgb(26, 113, 235)}
+    }
+</style>
+<body>
+    
+
+<form action="" method="get">
+    <h1>Formulario</h1>
+<p>
+Nombre: <input type="text" name="name_control" maxlength="8" autofocus required />
+</p>
+
+<p>
+Correo electrónico: <input type="email" name="email_control" required />
+</p>
+
+<p>
+URL: <input type="url" name="url_control" placeholder="Escribe la URL de tu página web personal" />
+</p>
+
+<p>
+Fecha: <input type="date" name="date_control" />
+</p>
+
+<p>
+Tiempo: <input type="time" name="time_control" />
+</p>
+
+<p>
+Fecha y hora: <input type="datetime" name="datetime_control" />
+</p>
+
+<p>
+Mes: <input type="month" name="month_control" />
+</p>
+
+<p>
+Semana: <input type="week" name="week_control" />
+</p>
+
+<p>
+Número (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" value="0" />
+</p>
+
+<p>
+Teléfono: <input type="tel" name="tel_control" />
+</p>
+
+<p>
+Término de búsqueda: <input type="search" name="search_control" />
+</p>
+
+<p>
+Color favorito: <input id="color" type="color" name="color_control" />
+</p>
+
+<p>
+<input type="submit" value="Enviar" />
+</p>
+</form>
+</body>
+</html>

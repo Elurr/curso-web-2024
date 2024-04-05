@@ -1,0 +1,20 @@
+.contenedor-mv {
+    /* aspecto visual */
+    border: 1px solid black;
+    padding: 3px;
+    width: 200px;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: flex-end; */
+}
+.boton-mv {
+    /* aspecto visual */
+    border: 1px solid dodgerblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Verdana;
+    /* width: 40%; */
+    /* -------------- */
+}

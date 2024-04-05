@@ -1,0 +1,49 @@
+.flex-container {
+    background-color: dodgerblue;
+    display: flex;
+}
+.vertical {
+    flex-direction: column;
+}
+.horizontal {
+    justify-content: flex-end;
+}
+.cruzado {
+    height: 300px;
+    /* justify-content alinea en el eje principal */
+    justify-content: space-around;
+    /* align-items alinea en el eje cruzado */
+    align-items: center;
+}
+.menu {
+    justify-content: space-between;
+}
+.izq, .der {
+    padding: 3px !important;
+    background-color: darkseagreen !important;
+}
+
+.flex-container > div {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+.cruzado div {
+    height: 20%;
+}
+
+.izq div, .der div {
+    background-color: white;
+    margin: 1px;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+}
+.home {
+    order: -1;
+}
+
+footer {
+    height: 50vh;
+}
