@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="selectores.css">
+</head>
+<body>
+    <h1>Selectores en CSS</h1>
+
+    <p>
+        Los selectores se usan para "encontrar" los elementos HTML a los que queremos otorgar de estilo.
+    </p>
+
+    <p>
+        Tienen 5 categorías:
+    </p>
+
+    <ul>
+        <li><b>Selectores simples:</b> nombre, clase, id.</li>
+        <li><b>Selectores combinadores:</b> Seleccionan elementos basándose en una relación específica entre ellos.</li>
+        <li><b>Selectores de Pseudo-clase:</b> Seleccionan elementos basándose en un <b>estado</b> específico.</li>
+        <li><b>Selectores de Pseudo-elementos:</b> Seleccionan y estilizan ciertas partes de un elemento.</li>
+        <li><b>Selectores de atributo:</b> Seleccionan elementos basándose en un atributo o en el valor de un atributo.</li>
+    </ul>
+
+    <h2>Selectores simples</h2>
+    <h3>Selector de elemento</h3>
+    <p>
+        Selecciona los elementos basándose en el <b>nombre</b> de la etiquieta HTML.
+    </p>
+    <p>Ref línea CSS 1</p>
+    <button>Botón HTML</button>
+    <button>Botón HTML</button>
+    <button>Botón HTML</button>
+
+    <h3>Selector id</h3>
+    <p>
+        Selecciona un único elemento básandose en el atributo id.
+    </p>
+    <p>
+        El atributo id es único por cada elemento. Si en el documento hay dos elementos con la misma id, ésta se aplicará solamente al último (orden de lectura).
+    </p>
+    <button id="btn1">Botón con id</button>
+
+    <h3>Selector de clase</h3>
+    <p>
+        Selecciona un grupo de elementos basándose en el atributo clase.
+    </p>
+    <button class="grupo-btn">Botón con clase</button>
+    <button class="grupo-btn" id="btn1">Botón con clase e id</button>
+    <button class="grupo-btn">Botón con clase</button>
+    <button>Botón HTML</button>
+
+    <h3>Selector universal</h3>
+    <p>
+        Selecciona <b>TODOS</b> los elementos del documento. El selector es un asterisco *
+    </p>
+
+    <h3>Agrupamiento de selectores</h3>
+    <p>
+        Se usa cuando queremos aplicar el mismo estilo a diferentes nombres/clases/id's. Ref en línea 22
+    </p>
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+
+    <h2>Selectores combinadores</h2>
+    <p>
+        Un combinador es un selector que explica la relación entre dos elementos.
+    </p>
+    <p>
+        Hay cuatro tipos distintos de combinadores:
+    </p>
+    <ul>
+        <li>Selector descendiente (espacio)</li>
+        <li>Selector child o hijo (>)</li>
+        <li>Selector adyacente o hermano (+)</li>
+        <li>Selector de hermano general (~)</li>
+    </ul>
+
+    <h3>Selector descendiente</h3>
+    <p>
+        Se usa para seleccionar a <b>TODOS</b> los descendientes de un elemento especificado.
+    </p>
+    <div>
+         <p>Este párrafo está dentro de un div</p>
+    </div>
+
+    <div>
+        <menu>
+            <p>Este párrafo es nieto de un div</p>
+        </menu>
+    </div>
+
+    <h3>Selector child o hijo</h3>
+    <div>
+        <span>Este span es hijo directo de un div</span>
+    </div>
+    <div>
+        <menu>
+            <span>Este span es nieto de un div</span>
+        </menu>
+    </div>
+
+    <h3>Selector hermano adyacente</h3>
+    <div>
+        <!-- <p>hola</p> -->
+        <h5>Encabezado 5</h5>
+        <!-- <span></span> -->
+        <p>Este párrafo está adyacente al h5</p>
+        <p>Este párrafo, no</p>
+    </div>
+
+    <h3>Selector hermano general o sibling</h3>
+    <div>
+        <p>Párrafo hermano de h6</p>
+        <h6>Encabezado 6</h6>
+        <p>Párrafo hermano de h6</p>
+        <p>Párrafo hermano de h6</p>
+    </div>
+
+
+
+    <footer></footer>
+</body>
+</html>
