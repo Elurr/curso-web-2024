@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio de selectores</title>
+</head>
+<style>
+    #fila1 {color: teal;}
+    #fila2 {color: red;}
+    #fila3 {color: blue;}
+    #fila4 {color: orange;}
+    #fila5 {color: purple;}
+    #fila6 {color: olive;}
+    #fila7 {color: fuchsia;}
+    #fila8 {color: green;}
+
+    /* Columnas */
+    td + td {
+        background-color: red;
+    }
+    td + td + td {
+        background-color: green;
+    }
+    td + td + td + td {
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <table border="1">
+        <tr id="fila1">
+            <td>teal</td>
+            <td>teal</td>
+            <td>teal</td>
+            <td>teal</td>
+        </tr>
+        <tr id="fila2">
+            <td>red</td>
+            <td>red</td>
+            <td>red</td>
+            <td>red</td>
+        </tr>
+        <tr id="fila3">
+            <td>blue</td>
+            <td>blue</td>
+            <td>blue</td>
+            <td>blue</td>
+        </tr>
+        <tr id="fila4">
+            <td>orange</td>
+            <td>orange</td>
+            <td>orange</td>
+            <td>orange</td>
+        </tr>
+        <tr id="fila5">
+            <td>purple</td>
+            <td>purple</td>
+            <td>purple</td>
+            <td>purple</td>
+        </tr>
+        <tr id="fila6">
+            <td>olive</td>
+            <td>olive</td>
+            <td>olive</td>
+            <td>olive</td>
+        </tr>
+        <tr id="fila7">
+            <td>fuchsia</td>
+            <td>fuchsia</td>
+            <td>fuchsia</td>
+            <td>fuchsia</td>
+        </tr>
+        <tr id="fila8">
+            <td>green</td>
+            <td>green</td>
+            <td>green</td>
+            <td>green</td>
+        </tr>
+    </table>
+</body>
+
+</html>

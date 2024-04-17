@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto</title>
+    <link rel="stylesheet" href="texto.css">
+</head>
+<body>
+    <h1>Formateo de texto con CSS</h1>
+    <p>CSS tiene un montón de propiedades para dar formato y alterar el texto</p>
+    
+    <h2>Color</h2>
+    <div id="color">
+        <h2>Esto es un título</h2>
+        <p>Este recuadro (div) tiene el fondo gris y texto azul.</p>
+        <div>Esto es un div</div>
+    </div>
+    <p>Para una buena lectura de nuestra web, es muy importante un alto contraste entre el texto y el fondo. Lo ideal, básicamente, es usar letra negra sobre fondos claros y letra blanca sobre fondos oscuros</p>
+
+    <p id="mal-ejemplo-color">Este texto no se distingue muy bien del fondo, por lo que la gente con problemas de visión no podrá entender el texto.</p>
+
+    <h2>Alineamiento</h2>
+    <p>Un texto puede estar alineado a la izquierda (por defecto), a la derecha, al centro o justificado.</p>
+
+    <div id="alinear">
+        <p>Este párrafo está alineado a la izquierda.</p>
+        <p>Este párrafo está alineado a la derecha.</p>
+        <p>Este párrafo está alineado al centro.</p>
+        <p>Este párrafo está alineado justificado. El texto ocupa toda la línea.</p>
+    </div>
+
+    <h2>Dirección del texto</h2>
+    <p id="invertido">
+        Este texto tiene la dirección invertida.
+    </p>
+
+    <h2>Decoración del texto (text-decoration)</h2>
+    <p>
+        Se usa <code>text-decoration</code> como atajo de las siguientes propiedades:
+    </p>
+    <ul>
+        <li><code>text-decoration-line</code> añade una línea decorativa al texto</li>
+        <li><code>text-decoration-color</code> asigna el color de la línea</li>
+        <li><code>text-decoration-style</code> asigna el estilo de la línea (como los bordes)</li>
+        <li><code>text-decoration-thickness</code> asigna el grosor de la línea</li>
+    </ul>
+
+    <div id="deco">
+        <h2>Texto de ejemplo</h2>
+        <h3>Texto de ejemplo</h3>
+        <h4>Texto de ejemplo</h4>
+        <p> Texto de ejemplo</p>
+    </div>
+    <p>
+        No es aconsejable subrayar texto que no sea un link, ya que puede provocar confusión al lector.
+    </p>
+
+    <h3>Decoración de links</h3>
+    <p>Un link por defecto tiene este <a href="colores.html">aspecto</a></p>
+    <p>Podemos usar <code>text-decoration: none</code> para remover la línea de los links: <br><br> <a href="colores.html" id="deco-a">link sin decoración</a></p>
+
+    <h2>Transformación del texto</h2>
+    <p>
+        La propiedad <code>text-transform</code> se usa para especificar letras mayúsculas y minúsculas en el texto.
+    </p>
+    <div id="transformar">
+        <p>Este texto está transformado en mayúsculas.</p>
+        <p>Esto texto está transformado en minúsculas.</p>
+        <p>Este texto está capitalizado.</p>
+    </div>
+
+    <h2>Espaciado del texto</h2>
+    <h3>Indentación</h3>
+    <p id="indentar">
+        La propiedad <code>text-indent</code> se usa para especificar un espaciado en la primera línea de un texto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequatur suscipit doloribus, eveniet corrupti nesciunt nisi provident in quis architecto aperiam nulla quod quasi, beatae dicta neque harum! Voluptate, nesciunt.
+    </p>
+
+    <h2>Espaciado entre caracteres</h2>
+    <h3>Título con espaciado aumentado</h3>
+    <h3>Título con espaciado disminuído</h3>
+
+</body>
+</html>

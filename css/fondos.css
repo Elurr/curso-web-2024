@@ -1,0 +1,69 @@
+/* Poner un color de fondo en toda la página */
+body {
+    background-color: lightgray;
+}
+
+h1 + div {
+    background-color: lightskyblue;
+}
+div p {
+    background-color: tomato;
+}
+
+/* Opacidad */
+#opacidad div {
+    background-color: green;
+    text-align: center;
+    padding: 25px;
+}
+#opacidad div {
+    opacity: 1;
+}
+#opacidad div + div{
+    opacity: 0.7;
+}
+#opacidad div + div + div {
+    opacity: 0.35;
+}
+#opacidad div + div + div + div{
+    opacity: 0.1;
+}
+
+/* rgba */
+#opacidad-rgba {
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(255, 180, 250, 0.5);
+}
+
+/* Imagen de fondo */
+#imagen {
+    height: 200px;
+    /* definir fuente de la imagen */
+    background-image: url(https://d2zp5xs5cp8zlg.cloudfront.net/image-78260-800.jpg);
+
+    /* parámetros de la imagen */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#imagen-pegada {
+    height: 1000px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0344/6469/files/ninja-cats-photography-hisakata-hiroyuki-81-59f196f494ef6__880.jpg?v=1535589517);
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#imagen-pegada2 {
+    margin-top: 100px;
+    height: 1000px;
+    /* background-image: url(https://cdn.shopify.com/s/files/1/0344/6469/files/ninja.jpg?v=1535591073);
+
+    background-color: #fff
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+
+    background: #fff url(https://cdn.shopify.com/s/files/1/0344/6469/files/ninja.jpg?v=1535591073) no-repeat fixed center;
+}

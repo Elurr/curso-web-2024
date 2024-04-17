@@ -1,0 +1,27 @@
+div, div * {
+    border: 1px solid black;
+}
+div p {
+    background-color: yellow;
+    height: 20px;
+}
+/* Hijos del abuelo */
+div > p {
+    background-color: lime;
+    min-height: 100px;
+}
+/* Nietos */
+div > p > p {
+    background-color: red !important;
+    height: 50px;
+    z-index: 5 !important;
+}
+div h5 {
+    background-color: orange;
+    /* height: 50px; */
+}
+div span {
+    background-color: dodgerblue;
+    height: 20px;
+    display: block;
+}

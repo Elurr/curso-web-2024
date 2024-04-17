@@ -1,0 +1,41 @@
+div {
+    margin-top: 10px;
+    text-align: center;
+    padding: 25px;
+}
+div#borde1 {
+    border: 1px solid black;
+}
+div#borde2 {
+    border-bottom: 1px solid red;
+    background-color: cornsilk;
+}
+div#borde3 {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+div#borde4 {
+    border-left: 3px solid blue;
+    background-color: azure;
+}
+
+h2 ~ div {
+    border: 3px solid rgb(131, 178, 255);
+    background-color: azure;
+}
+#dotted {border-style: dotted}
+#dashed {border-style: dashed}
+#double {border-style: double}
+#groove {border-style: groove}
+#ridge {border-style: ridge}
+#inset {border-style: inset}
+#outset {border-style: outset}
+#none {border-style: none}
+#hidden {border-style: hidden}
+#mix {border-style: dotted dashed solid double}
+
+#width {
+    border-width: 25px 10px 4px 35px;
+    /* 25 arriba, 10 derecha, 4 abajo, 35 izquierda */
+    border-color: chocolate turquoise darkcyan crimson;
+}

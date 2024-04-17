@@ -1,0 +1,80 @@
+#color {
+    background-color: lightgray;
+    color: dodgerblue;
+    border: 3px solid;
+}
+#color h2 {
+    margin-top: 0;
+    background-color: black;
+    color: white;
+}
+#color div {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#mal-ejemplo-color {
+    background-color: crimson;
+    color: fuchsia;
+}
+
+#alinear, #deco, #transformar {
+    border: 3px solid black;
+}
+#alinear p {text-align: left;}
+#alinear p + p {text-align: right;}
+#alinear p:nth-child(3) {text-align: center;}
+#alinear p:last-child {text-align: justify;}
+
+#invertido {
+    /* El texto va de derecha izquierda */
+    direction: rtl;
+    /* Invierte el orden de los caracteres */
+    unicode-bidi: bidi-override;
+}
+
+code {
+    background-color: rgb(60, 60, 60);
+    color: rgb(107, 153, 254);
+}
+
+#deco h2 {
+    text-decoration-line: line-through;
+    text-decoration-color: crimson;
+}
+#deco h3 {
+    text-decoration-line: overline;
+    text-decoration-thickness: 8px;
+}
+#deco h4 {
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    color: blue;
+}
+#deco p {
+    text-decoration-line: overline underline;
+    text-decoration-style: dashed;
+}
+
+#deco-a {
+    text-decoration: none;
+
+    background-color: dodgerblue;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#transformar p {
+    text-transform: uppercase;
+}
+#transformar p + p {
+    text-transform: lowercase;
+}
+#transformar p + p + p {
+    text-transform: capitalize;
+}
+
+#indentar {
+    text-indent: 50px;
+}

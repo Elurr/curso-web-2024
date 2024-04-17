@@ -1,0 +1,24 @@
+div {
+    border: 1px solid dodgerblue;
+}
+#ej1 {
+    margin: 70px;
+}
+#ej2 {
+    margin: 40px 50px;
+    /* dos valores: 1er valor top-bottom, 2do valor left-right */
+}
+#ej3 {
+    margin: 25px 50px 75px;
+    /* tres valores: 1er valor top, 2do valor letf-right, 3er valor bottom */
+}
+#ej4 {
+    margin: 25px 50px 75px 100px;
+    /* cuatro valores: superior, derecho, inferior e izquierdo */
+}
+
+#auto {
+    width: 200px;
+    margin: 0 auto;
+    /* margin: 0 auto 0 auto; */
+}
