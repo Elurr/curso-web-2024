@@ -1,0 +1,13 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    border: 1px solid rgb(80, 80, 120);
+    color: rgb(80, 80, 120);
+    width: 100%;
+    border-collapse: collapse;
+}
+table td {
+    border-top: 1px solid rgb(80, 80, 120);
+}

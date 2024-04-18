@@ -18,7 +18,7 @@
     color: fuchsia;
 }
 
-#alinear, #deco, #transformar {
+#alinear, #deco, #transformar, #sombras {
     border: 3px solid black;
 }
 #alinear p {text-align: left;}
@@ -77,4 +77,52 @@ code {
 
 #indentar {
     text-indent: 50px;
+}
+#esp1 {
+    letter-spacing: 5px;
+}
+#esp2 {
+    letter-spacing: -2px;
+}
+
+#altura p + p {
+    line-height: 0.6;
+    background-color: lightblue;
+}
+#altura p:last-child {
+    line-height: 1.8;
+}
+
+#esp-palabras p + p {
+    background-color: lightblue;
+    word-spacing: -3px;
+}
+#esp-palabras p:last-child {
+    word-spacing: 10px;
+}
+
+#sombras h2:first-child {
+    /* primer valor horizontal, segundo vertical */
+    text-shadow: 2px 2px;
+}
+#sombras h2:nth-child(2) {
+    text-shadow: 2px 2px crimson;
+}
+#sombras h2:nth-child(3) {
+    /* tercer valor, blur o desenfoque */
+    text-shadow: 2px 2px 4px #abf;
+}
+#sombras h2:nth-child(5) {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+#sombras h2:nth-child(7) {
+    text-shadow: 0 0 3px red;
+}
+#sombras h2:nth-child(9) {
+    text-shadow: 0 0 5px purple, 0 0 2px crimson;
+}
+#sombras h2:last-child {
+    color: white;
+    text-shadow: 1px 1px black, 0 0 25px blue, 0 0 5px darkblue;
 }
