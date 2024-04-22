@@ -7,6 +7,9 @@
     <title>Fuentes</title>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="fuentes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&family=Dancing+Script:wght@400..700&display=swap&effect=fire|neon" rel="stylesheet">
 </head>
 
 <body>
@@ -75,6 +78,104 @@
             </tr>
         </tbody>
     </table>
+
+    <h2>Estilos de fuente</h2>
+    <h3><code>font-style</code></h3>
+    <p>Esta propiedad se usa para darle cursiva a un texto. Tiene tres propiedades:</p>
+    <div id="italic">
+        <p>Este es un párrafo con estilo normal.</p>
+        <p>Este es un párrafo con estilo "italic" o en cursiva.</p>
+        <p>Este es un párrafo con estilo "oblique" u oblícuo, que es muy similar a "italic" pero con menor soporte.</p>
+    </div>
+
+    <h3><code>font-weight</code></h3>
+    <div id="weight">
+        <p>Este es un párrafo normal.</p>
+        <p>Este es un párrafo ligero.</p>
+        <p>Este es un párrafo grueso.</p>
+        <p>Este es un párrafo más grueso.</p>
+    </div>
+
+    <h3><code>font-variant</code></h3>
+    <p>Con esta propiedad podemos especificar que un texto se muestre en "small-caps".</p>
+    <p id="variant">Con esta fuente, todas las minúsculas de un texto se convertirán mayúsculas pero de menor tamaño.
+    </p>
+
+    <h2>Tamaño de fuente</h2>
+    <p>
+        La propiedad <code>font-size</code> especifica el tamaño de un texto.
+    </p>
+    <p>
+        Ser capaz de modificar los tamaños de los diferentes textos de una web es muy importante. Sin embargo, no uses
+        párrafos con tamaños mayores para que parezcan títulos y viceversa. Usa las correspondientes etiquetas h1-h6
+        para títulos o p para párrafos.
+    </p>
+    <p>Los valores de tamaño pueden ser <b>absolutos</b> o <b>relativos</b>:</p>
+    <p>Valor absoluto:</p>
+    <ul>
+        <li>Establece el texto a un tamaño específico.</li>
+        <li>No permite que el usuario cambie el tamaño del texto desde su navegador (malo por razones de accesibilidad)
+        </li>
+        <li>Un valor absoluto es útil cuando se conoce el tamaño físico del dispositivo con el que se visualizará
+            nuestra página.</li>
+    </ul>
+    <p>Valor relativo:</p>
+    <ul>
+        <li>Establece el tamaño relativo a los elementos de alrededor.</li>
+        <li>Permite al usuario cambiar el tamaño del texto en el navegador</li>
+    </ul>
+
+    <div id="absoluto">
+        <h2>Esto es un título 2</h2>
+        <h3>Esto es un título 3</h3>
+        <p>Esto es un párrafo.</p>
+        <p>Esto es otro párrafo.</p>
+    </div>
+    <h3>Valores em</h3>
+    <p>Para permitir que el usuario pueda redimensionar el texto, los devs o desarrolladores, utilizamos em en lugar de
+        píxeles.</p>
+    <p>1em equivale al tamaño por defecto del texto que son 16px.</p>
+    <p>Para calcular la equivalencia de píxeles a em usa esta fórmula: <i>px/16=em</i></p>
+    <div id="absoluto-em">
+        <h2>Esto es un título 2</h2>
+        <h3>Esto es un título 3</h3>
+        <p>Esto es un párrafo.</p>
+        <p>Esto es otro párrafo.</p>
+    </div>
+
+    <h2>Fuente responsive</h2>
+    <p>Podemos usar la unidad <code>rem</code> para conseguir directamente el efecto de usar la combinación de
+        <code>em</code> y <code>body {font-size: 100%}</code>.</p>
+
+    <p>Otra medida responsive es la unidad <code>vw</code>, que significa "viewport width" o ancho de la pantalla.</p>
+
+    <div id="viewport" class="recuadro">
+        <h2>Texto responsive</h2>
+        <p>Cambia el tamaño de la ventana para ver el efecto</p>
+        <p>Usa la unidad "vw" para darle tamaño al texto. Por ejemplo, 10vw pondrá el texto al 10% del tamaño del ancho
+            de la pantalla.</p>
+        <p>Viewport es el tamaño de la ventana del navegador. 1vw equivale al 1% del ancho de la ventana. Si la ventana
+            mide 50cm de ancho, 1vw será 0.5cm de ancho</p>
+    </div>
+
+    <h2>Google Fonts</h2>
+    <p>Las Google Fonts son gratuitas y hay más de 1000 disponibles</p>
+    <p>
+        Para usarlas, deberemos usar un <code>link</code> especial en la sección <code>head</code> del documento.
+    </p>
+    <div id="g-font" class="recuadro">
+        <h2>Audiowide Font</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>1234567890</p>
+    </div>
+    <div id="g-font2" class="recuadro">
+        <h2>Dancing Script Font</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>1234567890</p>
+    </div>
+    <div id="g-effects" class="recuadro">
+        <h2 class="font-effect-neon">Jonathan</h2>
+    </div>
 
 </body>
 

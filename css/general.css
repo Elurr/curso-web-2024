@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -10,4 +12,15 @@ table {
 }
 table td {
     border-top: 1px solid rgb(80, 80, 120);
+}
+code {
+    background-color: rgb(60, 60, 60);
+    color: lightskyblue;
+    font-family: 'Kode Mono', monospace;
+}
+
+.recuadro {
+    border: 3px solid black;
+    margin: 0 auto;
+    padding: 0 5px;
 }

@@ -37,3 +37,75 @@
 #fantasy p:last-child {
     font-family: Papyrus;
 }
+
+/* Estilos de fuente */
+#italic p {
+    font-style: normal;
+}
+#italic p + p {
+    font-style: italic;
+}
+#italic p:last-child {
+    font-style: oblique;
+}
+
+#weight p {
+    font-weight: normal;
+}
+#weight p:nth-child(2) {
+    font-weight: lighter;
+}
+#weight p:nth-child(3) {
+    font-weight: bold;
+}
+#weight p:nth-child(4) {
+    font-weight: 900;
+}
+
+#variant {
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+/* Tamaños de fuente */
+#absoluto h2 {
+    font-size: 40px;
+}
+#absoluto h3 {
+    font-size: 30px;
+}
+#absoluto p {
+    font-size: 14px;
+}
+
+#absoluto-em h2 {
+    font-size: 2.5em;
+}
+#absoluto-em h3 {
+    font-size: 1.875em;
+}
+#absoluto-em p {
+    font-size: 0.875em;
+}
+body {
+    font-size: 100%;
+}
+
+/* Fuestes responsive */
+#viewport h2 {
+    font-size: 10vw;
+}
+#viewport p {
+    font-size: 5vw;
+}
+
+#g-font {
+    font-family: Audiowide;
+}
+#g-font2 {
+    font-family: 'Dancing Script';
+}
+#g-effects {
+    font-family: Audiowide;
+    background-color: rgb(40, 40, 40);
+}
