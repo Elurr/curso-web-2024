@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 260px;
+}
+.blue-container {
+    display: flex;
+    border: 3px solid skyblue;
+    height: 65px;
+}
+.blue-container div {
+    border: 3px solid black;
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+}
+.blue-container .invisible {
+    /* visibility: hidden; */
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+/* Letra Z */
+.primer-contenedor .segunda-fila,.primer-contenedor .tercera-fila {
+    justify-content: center;
+}
+/* Letra A */
+.segundo-contenedor .segunda-fila, .segundo-contenedor .cuarta-fila {
+    justify-content: space-between;
+}
