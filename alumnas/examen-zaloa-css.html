@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Examen CSS Zaloa</title>
+    <link rel="stylesheet" type="text/css" href="examen-zaloa-css.css">
+</head>
+
+<body>
+    <header id="site-header">
+        <figure>
+            <img src="/IMG/logotulipan.png" id="logo">
+            <figcaption>
+                <p>Restaurante UXP | B125698746</p>
+            </figcaption>
+        </figure>
+        <div>
+            <ul>
+                <li class="seleccionado"><a href="">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="">TRABAJA CON NOSOTROS</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="site-main">
+        <img src="/IMG/Cuchara.png" id="cuchara">
+        <img src="/IMG/flecha.png" id="flecha">
+        <form>
+            <h3>Registro</h3>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" class="bloque">
+            <input type="text" name="email" id="email" placeholder="email" class="bloque">
+            <h3>Comensales</h3>
+            <select class="seleccion">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+            <h3>Mesa</h3>
+            <input type="radio" name="mesa" id="interior">
+            <label for="interior">Interior</label>
+            <input type="radio" name="mesa" id="exterior"><label for="exterior">Exterior</label>
+            <input type="submit" name="enviar" id="enviar" value="ENVIAR" class="bloque">
+        </form>
+    </main>
+</body>
+
+</html>

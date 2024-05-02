@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    background-color: dodgerblue;
+    height: 600px;
+    width: 800px;
+}
+menu {
+    /* height: 15%; */
+}
+.contenedor {
+    /* height: 85%; */
+}
+form, menu, .contenedor {
+    /* border: 2px solid black; */
+}
+img {
+    width: 60%;
+    height: fit-content;
+}
+form {
+    width: 250px;
+    height: 300px;
+    background-color: lightgreen;
+}
+form input {
+    display: block;
+    margin: 15px;
+}
+
+/* position */
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.contenedor img {
+    
+}
+.contenedor form {
+    position: absolute;
+    top: 150px;
+    left: 60%;
+}
+menu {
+    display: flex;
+    justify-content: space-between;
+}
+menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    transition: all 0.5s;
+    border-bottom: 4px solid transparent;
+}
+
+menu a:hover {
+    border-bottom: 4px solid white;
+}

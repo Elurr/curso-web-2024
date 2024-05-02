@@ -1,8 +1,13 @@
+/* Ponemos la palabra en horizontal */
+body {
+    display: flex;
+    justify-content: space-around;
+}
 .flex-container {
     display: flex;
     flex-direction: column;
     border: 5px solid black;
-    width: 260px;
+    /* width: 260px; */
 }
 .blue-container {
     display: flex;
@@ -14,6 +19,7 @@
     height: 60px;
     width: 60px;
     background-color: orange;
+    margin: 0 3px;
 }
 .blue-container .invisible {
     /* visibility: hidden; */
@@ -28,4 +34,13 @@
 /* Letra A */
 .segundo-contenedor .segunda-fila, .segundo-contenedor .cuarta-fila {
     justify-content: space-between;
+}
+/* Letra O */
+.cuarto-contenedor .segunda-fila, .cuarto-contenedor .tercera-fila {
+    justify-content: space-between;
+}
+
+/* Hacemos desaparecer los bordes */
+* {
+    border: none !important;
 }

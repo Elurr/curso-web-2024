@@ -1,0 +1,96 @@
+body {
+    background-color: dodgerblue;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img#logo {
+    height: 60px;
+    width: fit-content;
+}
+img#cuchara {
+    width: 80%;
+}
+img#flecha {
+    width: 120px;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+ul li.seleccionado {
+    border-bottom: 7px solid white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+header ul {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    font-weight: bold;
+    line-height: 15px;
+}
+header ul li {
+    padding: 20px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+header div#contenedor-logo {
+    display: flex;
+    flex-direction: column;
+}
+header div p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    width: 195px;
+    margin-top: 8px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form {
+    position: absolute;
+    /* border: 1px solid white; */
+    top: 40%;
+    left: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 220px;
+}
+main form input {
+    margin-top: 10px;
+}
+
+input.bloque {
+    padding: 5px 0;
+    border: 1px solid lightblue;
+    border-radius: 1px;
+    opacity: 0.6;
+}
+input#enviar {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    opacity: 1;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 152px;
+}
+form select {
+    width: 30px;
+}
+form h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
