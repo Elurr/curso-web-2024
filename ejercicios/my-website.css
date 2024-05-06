@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: dodgerblue;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 0;
+}
+header * {
+    margin: 5px;
+}
+
+menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+}
+menu div {
+    display: flex;
+}
+menu a {
+    display: block;
+    padding: 10px 14px 6px;
+    border-bottom: 4px solid transparent;
+    /* bottom: 6px padding + 4px del borde suman 10px en total */
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+menu a:first-child {
+    background-color: #888;
+}
+
+menu a:not(:first-child):hover {
+    /* al pasar el cursor por todos los links que no sean primer hijo: van a destacar al cambiar el color del fondo o podemos ponerles el borde inferior visible (arriba lo pusimos transparente) */
+    background-color: deepskyblue;
+    /* border-color: white; */
+}
+
+main {
+    display: flex;
+}
+main section {
+    padding: 20px;
+}
+main section * {
+    margin: 10px 0;
+}
+main section img {
+    display: block;
+    /* Las img de base son elementos en línea. Les he puesto esto para que se apilen unas sobre otras. */
+}
+main section.izquierda {
+    width: 30%;
+}
+main section.derecha {
+    width: 70%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #ccc;
+}
