@@ -52,8 +52,15 @@ menu a:not(:first-child):hover {
 main {
     display: flex;
 }
+main section.izquierda {
+    width: 30%;
+    background-color: #eee;
+}
+main section.derecha {
+    width: 70%;
+}
 main section {
-    padding: 20px;
+    padding: 25px;
 }
 main section * {
     margin: 10px 0;
@@ -61,13 +68,9 @@ main section * {
 main section img {
     display: block;
     /* Las img de base son elementos en línea. Les he puesto esto para que se apilen unas sobre otras. */
+    width: 100%;
 }
-main section.izquierda {
-    width: 30%;
-}
-main section.derecha {
-    width: 70%;
-}
+
 
 footer {
     display: flex;
