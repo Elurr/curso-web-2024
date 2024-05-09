@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 200vh;
+}
+header {
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(https://images.pexels.com/photos/277054/pexels-photo-277054.jpeg);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+
+}
+header > div {
+    width: 100%;
+    z-index: 2;
+}
+header div.mascara {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+header div.superior {
+    display: flex;
+    justify-content: space-between;
+}
+header div.inferior {
+    text-align: center;
+    padding: 225px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    display: block;
+    position: relative;
+}
+header nav.izquierda div.logo {
+    border: 1px solid white;
+    margin-right: 5px;
+}
+header nav.izquierda div.logo a {
+    font-size: 2rem;
+    margin: 3px;
+    padding: 0 5px;
+    font-family: Teachers;
+}
+/* header h1::before{
+    content: "";
+    margin-bottom: 1px solid white;
+    width: 120px;
+    height: 1px;
+} */
+header .inferior h1 {
+    margin: 0 50px;
+    font-size: 3rem;
+}
+header .inferior .linea {
+    width: 150px;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.4);
+}
+
+header nav.izquierda a span {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(232, 195, 150);
+    transition: all 1s;
+    height: 1px;
+}
+header nav.izquierda a:hover span{
+    animation: linea .5s linear forwards;
+}
+@keyframes linea {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
