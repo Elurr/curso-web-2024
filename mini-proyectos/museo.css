@@ -5,7 +5,7 @@
     margin: 0;
 }
 body {
-    height: 200vh;
+    min-height: 200vh;
 }
 header {
     color: white;
