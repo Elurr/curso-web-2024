@@ -101,3 +101,77 @@ header nav.izquierda a:hover span{
     0% {width: 0;}
     100% {width: 100%;}
 }
+
+/*------------- Galería -------------*/
+
+main.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 1800px;
+    padding: 150px 0;
+}
+
+main.gallery div.imagen {
+    width: 25%;
+    height: 33%;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+
+    background-color: #333;
+    border: 1px solid white;
+    background-size: cover;
+    background-position: center;
+}
+main.gallery div.imagen:first-child {
+    background-image: url(https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg);
+}
+main.gallery div.imagen:nth-child(2) {
+    background-image: url(https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg);
+}
+main.gallery div.imagen:nth-child(3) {
+    background-image: url(https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg);
+}
+main.gallery div.imagen:nth-child(4) {
+    background-image: url(https://images.pexels.com/photos/19982589/pexels-photo-19982589/free-photo-of-arte-festival-estatua-celebracion.jpeg);
+}
+main.gallery div.imagen:nth-child(5) {
+    background-image: url(https://images.pexels.com/photos/19977866/pexels-photo-19977866/free-photo-of-arte-jardin-estatua-decoracion.jpeg);
+}
+main.gallery div.imagen:nth-child(6) {
+    background-image: url(https://images.pexels.com/photos/19970072/pexels-photo-19970072/free-photo-of-ciudad-arte-punto-de-referencia-edificio.jpeg);
+}
+main.gallery div.imagen:nth-child() {
+    background-image: url();
+}
+main.gallery div.imagen:nth-child() {
+    background-image: url();
+}
+main.gallery div.imagen:nth-child() {
+    background-image: url();
+}
+
+div.imagen div.sumar {
+    width: 100%;
+    height: 0%;
+    background-color: white;
+    transition: all .5s;
+}
+div.imagen div.sumar p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  rgb(232, 195, 150);
+    font-size: 4rem;
+    opacity: 0;
+}
+div.imagen:hover > div.sumar {
+    height: 100%;
+} 
+div.imagen:hover > div.sumar > p {
+    opacity: 1;
+    transition: all 1s;
+}

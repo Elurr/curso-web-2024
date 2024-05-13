@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso examen CSS</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #444;
+        padding: 7px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+    }
+
+    main {
+        display: flex;
+    }
+    main .izquierda {
+        background-color: skyblue;
+    }
+    main section div {
+        padding: 10px;
+        color: white;
+    }
+    main .izquierda div:nth-child(2) {
+        background-color: blueviolet;
+    }
+    main .izquierda div:nth-child(3) {
+        background-color: pink;
+    }
+    main .izquierda div:nth-child(4) {
+        background-color: indigo;
+    }
+    main .izquierda div:nth-child(5) {
+        background-color: lightblue;
+    }
+    main .derecha div:first-child {
+        background-color: crimson;
+    }
+    main .derecha div:nth-child(2) {
+        background-color: orchid;
+    }
+</style>
+
+<body>
+    <nav>
+        <div>
+            <a href="">Home</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </div>
+        <a href="">Link</a>
+    </nav>
+    <main>
+        <section class="izquierda">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae nihil dolorem, autem
+                    delectus quidem doloremque fuga mollitia eveniet rem nam incidunt nobis, neque minus ipsum quos
+                    praesentium. Molestiae, quis.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae nihil dolorem, autem
+                    delectus quidem doloremque fuga mollitia eveniet rem nam incidunt nobis, neque minus ipsum quos
+                    praesentium. Molestiae, quis.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae nihil dolorem, autem
+                    delectus quidem doloremque fuga mollitia eveniet rem nam incidunt nobis, neque minus ipsum quos
+                    praesentium. Molestiae, quis.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae nihil dolorem, autem
+                    delectus quidem doloremque fuga mollitia eveniet rem nam incidunt nobis, neque minus ipsum quos
+                    praesentium. Molestiae, quis.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae nihil dolorem, autem
+                    delectus quidem doloremque fuga mollitia eveniet rem nam incidunt nobis, neque minus ipsum quos
+                    praesentium. Molestiae, quis.</p>
+            </div>
+        </section>
+        <section class="derecha">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et perspiciatis tenetur natus quasi
+                    quisquam eos asperiores necessitatibus suscipit neque. Optio dolorem inventore reiciendis neque?
+                    Assumenda similique aspernatur recusandae corrupti cum?</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et perspiciatis tenetur natus quasi
+                    quisquam eos asperiores necessitatibus suscipit neque. Optio dolorem inventore reiciendis neque?
+                    Assumenda similique aspernatur recusandae corrupti cum?</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
