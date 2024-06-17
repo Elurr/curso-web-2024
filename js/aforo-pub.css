@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: dodgerblue;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contenedor {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contenedor * {
+    margin: 10px 5px;
+}
+
+.contenedor button {
+    padding: 0 25px;
+    color: white;
+    font-size: 2rem;
+    background-color: pink;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px plum;
+}
+
+.contenedor button:hover {
+    cursor: pointer;
+}
+
+.contenedor button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+/* creamos una clase que hace que el botón se inhabilite visualmente */
+.contenedor button.inactivo {
+    background-color: lightgray;
+    color: lightgray;
+    box-shadow: none;
+    transform: translateY(2px);
+    cursor: default;
+}
+
+#completo {
+    opacity: 0;
+    background-color: rgba(255, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}

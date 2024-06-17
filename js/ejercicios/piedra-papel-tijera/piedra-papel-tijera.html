@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel Tijera</title>
+    <script src="https://kit.fontawesome.com/a815888759.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: rgb(197, 211, 235);
+    }
+    
+    button {
+        font-size: 8rem;
+        color: rgb(1, 64, 127);
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        width: 12rem;
+        height: 12rem;
+        transform: rotateY(180deg);
+    }
+</style>
+<body>
+    <button id="btn-piedra" onclick="elegir('piedra')"><i class="fa-solid fa-hand-fist"></i></button>
+    <button id="btn-papel"  onclick="elegir('papel')"><i class="fa-solid fa-hand"></i></i></button>
+    <button id="btn-tijera" onclick="elegir('tijera')"><i class="fa-solid fa-hand-peace"></i></i></button>
+    
+</body>
+<script src="piedra-papel-tijera.js"></script>
+</html>

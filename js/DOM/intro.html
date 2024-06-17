@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al DOM</title>
+    <link rel="stylesheet" href="../../css/general.css">
+</head>
+
+<body>
+    <h1>DOM (Document Object Model)</h1>
+    <p>Con el DOM, JavaScript puede acceder y cambiar todos los elementos de un documento HTML.</p>
+
+    <p>Cuando el navegador carga una web, crea un DOM de la página.</p>
+
+    <p>El modelo DOM es construído como un árbol jerárquico de objetos:</p>
+
+    <img src="https://www.w3schools.com/js/pic_htmltree.gif" alt="" width="100%">
+
+    <p>Con esto, JavaScript obtiene la posibilidad de crear HTML dinámicamente:</p>
+
+    <ul>
+        <li>Puede cambiar todos los elementos de una página.</li>
+        <li>Puede cambiar los atributos.</li>
+        <li>Puede cambiar los estilos CSS.</li>
+        <li>Puede añadir o remover elementos y atributos HTML.</li>
+        <li>Puede <strong>reaccionar</strong> a todos los eventos HTML de la página.</li>
+        <li>Puede crear nuevos eventos.</li>
+    </ul>
+
+    <h2>¿Qué es el DOM HTML?</h2>
+    <p>Es el modelo de objeto estándar y la interfaz de programación para HTML. Define:</p>
+
+    <ul>
+        <li>Los elementos HTML como objetos.</li>
+        <li>Las propiedades de los elementos.</li>
+        <li>Los métodos para acceder a dichos elementos.</li>
+        <li>Los eventos para todos los elementos (Un ejemplo sería pulsar un botón).</li>
+    </ul>
+
+    <h2>Métodos del DOM</h2>
+    <p>Son acciones que puedes realizar sobre los elementos HTML (como borrar o crear un elemento).</p>
+    <p>Las propiedades son valores que puedes establecer u obtener de los elementos (como el href de un link).</p>
+
+    <h3>Ejemplo:</h3>
+    <p>Imaginemos que queremos cambiar el contenido (innerHTML) de un párrafo.</p>
+
+    <p id="ejemplo1">Buenos días, estamos en primavera.</p>
+    <button onclick="cambiarTexto()">Pulsa aquí para cambiar el texto!</button>
+
+
+</body>
+<script src="intro.js"></script>
+
+</html>

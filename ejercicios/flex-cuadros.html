@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadros con flex</title>
+    <link rel="stylesheet" href="flex-cuadros.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: #abc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-flow: column wrap-reverse; */
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        height: 400px;
+        width: 600px;
+    }
+    .container div {
+        padding: 20px;
+        border: 1px solid black;
+        height: 15%;
+        width: 15%;
+        margin: 10px;
+        text-align: center;
+        font-size: 2rem;
+    }
+</style>
+<body>
+    <main class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </main>
+</body>
+</html>
