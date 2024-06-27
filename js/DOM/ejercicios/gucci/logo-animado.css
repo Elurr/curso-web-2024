@@ -8,21 +8,41 @@ body {
     background-color: lightgray;
 }
 
+/* header en posición inicial */
 header {
     display: flex;
-    justify-content: space-around;
-    background-color: white;
-    padding: 20px;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px 50px;
     font-size: 0.75rem;
     font-family: poppins, helvetica;
     font-weight: 500;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
 }
-
+header .contact-container {
+    visibility: hidden;
+    transition: visibility .5s;
+}
 header div a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding-right: 20px;
 }
+
+/* header en sticky */
+header.sticky {
+    background-color: white;
+}
+header.sticky .contact-container {
+    visibility: visible;
+}
+header.sticky div a {
+    color: black;
+}
+
+
 
 header div {
     display: flex;
@@ -52,25 +72,39 @@ header .contact-container span:hover {
 }
 
 /* cambio de tamaño del logo GUCCI */
-header div.logo-container {
+header.sticky div.logo-container {
     font-size: 2.2rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
+    transition: all .5s;
+    position: static;
+    width: auto;
+    opacity: 1;
 }
-header div.logo-container.logo-big {
+header.sticky div.logo-container a {
+    transition: all .5s;
+    color: black;
+}
+header div.logo-container {
     position: absolute;
     /* sacamos el logo de la barra de navegación superior */
     width: 100%;
     font-size: 20rem;
     opacity: 0.6;
     letter-spacing: 4rem;
-    transition: all .5s;
 }  
-header div.logo-container.logo-big a {
+header div.logo-container a {
     color: white;
     margin: 0 auto;
     /* centrar la a, text-align no funciona porque no es ni p, h */
     padding: 0;
     text-align: center;
-    transition: all .5s;
+}
+
+/* banner */
+div.banner-container {
+    background-image: url(img/pexels-taylor-labour-grande.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
 }
