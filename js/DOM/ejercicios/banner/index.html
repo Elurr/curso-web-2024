@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Contenedor del banner -->
+    <div class="contenedor-banner">
+
+        <!-- Imágenes con todo el ancho, número y texto -->
+        <div class="diapositivas fade">
+            <div class="numero">1/5</div>
+            <!-- <img src="img/1.jpg"> -->
+             <div class="imagen primera"></div>
+            <div class="texto">Texto de foto</div>
+        </div>
+
+        <div class="diapositivas fade">
+            <div class="numero">2/5</div>
+            <!-- <img src="img/2.jpg"> -->
+             <div class="imagen segunda"></div>
+            <div class="texto">Texto de foto</div>
+        </div>
+
+        <div class="diapositivas fade">
+            <div class="numero">3/5</div>
+            <!-- <img src="img/3.jpg"> -->
+             <div class="imagen tercera"></div>
+            <div class="texto">Texto de foto</div>
+        </div>
+
+        <div class="diapositivas fade">
+            <div class="numero">4/5</div>
+            <!-- <img src="img/4.jpg"> -->
+             <div class="imagen cuarta"></div>
+            <div class="texto">Texto de foto</div>
+        </div>
+
+        <div class="diapositivas fade">
+            <div class="numero">5/5</div>
+            <!-- <img src="img/5.jpg"> -->
+             <div class="imagen quinta"></div>
+            <div class="texto">Texto de foto</div>
+        </div>
+
+        <!-- Botones Siguiente y Anterior -->
+        <a class="anterior" onclick="cambiarDiapositiva(-1)"><span class="material-symbols-outlined">
+                arrow_back_ios
+            </span></a>
+        <a class="siguiente" onclick="cambiarDiapositiva(1)"><span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span></a>
+        <br>
+
+        <!-- Los puntos/círculos  -->
+        <div class="contenedor-puntos">
+            <span class="punto" onclick="puntoDiapositiva(1)"></span>
+            <span class="punto" onclick="puntoDiapositiva(2)"></span>
+            <span class="punto" onclick="puntoDiapositiva(3)"></span>
+            <span class="punto" onclick="puntoDiapositiva(4)"></span>
+            <span class="punto" onclick="puntoDiapositiva(5)"></span>
+        </div> 
+
+    </div>
+
+</body>
+<!-- <script src="script.js"></script> -->
+<script src="script-optimizado.js"></script>
+
+</html>

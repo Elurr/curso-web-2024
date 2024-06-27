@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar elementos HTML</title>
+</head>
+<body>
+    <h1>Seleccionar elementos en el HTML</h1>
+    <p>Frecuentemente, vamos a querer manipular elementos HTML con JavaScript. Para ello deberás, antes que nada, encontrarlos e identificarlos.</p>
+
+    <p>Hay varias maneras de hacer esto:</p>
+    <ul>
+        <li>Encontrar elementos HTML por id.</li>
+        <li>Encontrar elementos HTML por clase.</li>
+        <li>Encontrar elementos HTML por nombre de etiqueta.</li>
+        <li>Encontrar elementos HTML por selectores de CSS.</li>
+    </ul>
+
+    <h2>Encontrar usando id</h2>
+    <p id="test1">Encontrar este párrafo por id y cambiar su color</p>
+    <script>
+        let parrafoID = document.getElementById('test1');
+        parrafoID.style.color = 'violet';
+    </script>
+
+    <h2>Encontrar usando clases</h2>
+    <p class="test2">Encontrar varios párrafos que comparten una clase y cambiarlos</p>
+    <p class="test2">Encontrar varios párrafos que comparten una clase y cambiarlos</p>
+    <p class="test2">Encontrar varios párrafos que comparten una clase y cambiarlos</p>
+    <p class="test2">Encontrar varios párrafos que comparten una clase y cambiarlos</p>
+    <script>
+        // cuando buscamos elementos por nombre de etiqueta o por clase, nos retorna varios valores. Por lo tanto, éstos se guardan en un array.
+        const parrafosClase = document.getElementsByClassName('test2');
+        // parrafosClase.style.fontStyle = 'italic';
+        // esto no funciona
+
+        // al trabajar con los elementos de un array, debemos usar bucles:
+        for (let i = 0; i < parrafosClase.length; i++) {
+            // poner todos los parrafos del array en cursiva
+            parrafosClase[i].style.fontStyle = 'italic'; 
+        }
+    </script>
+
+    <h2>Encontrarlos por nombre de etiqueta</h2>
+    <span>Esto es span. El selector va a afectar a TODOS los span del documento.</span><br>
+    <span>Esto es span. El selector va a afectar a TODOS los span del documento.</span><br>
+    <span>Esto es span. El selector va a afectar a TODOS los span del documento.</span><br>
+    <script>
+        // dejar subrayados todos los span de la web
+        const listaSpan = document.getElementsByTagName('span');
+        listaSpan[0].style.backgroundColor = 'yellow';
+        listaSpan[1].style.backgroundColor = 'yellow';
+        listaSpan[2].style.backgroundColor = 'yellow';
+
+        for (let i = 0; i < listaSpan.length; i++) {
+            // listaSpan[i].style.backgroundColor = 'yellow';
+            // listaSpan[i].style.textDecoration = 'underline blue';            
+        }
+    </script>
+
+    <h2>Encontrar por selector CSS</h2>
+    <p>Podemos encontrar todos los elementos que coincidan con el criterio de un selector CSS en específico.</p>
+
+    <div class="test3">
+        <p id="test4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, blanditiis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, blanditiis!</p>
+    </div>
+    <script>
+        const parrafosCSS = document.querySelectorAll('div.test3 p');
+        // querySelectorAll nos devuelve un array
+        for (let i = 0; i < parrafosCSS.length; i++) {
+            parrafosCSS[i].style.backgroundColor = 'dodgerblue';
+            parrafosCSS[i].style.color = 'white';   
+        }
+
+        let parrafoCSS = document.querySelector('#test4');
+                         document.getElementById('test4');  
+        // querySelector nos devuelve sólo un valor
+        parrafoCSS.style.textTransform = 'capitalize';   
+    </script>
+
+    
+</body>
+</html>

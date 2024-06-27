@@ -1,0 +1,126 @@
+img {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-banner {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.imagen {
+    width: 500px;
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+}
+.primera {
+    background-image: url(img/1.jpg);
+}
+.segunda {
+    background-image: url(img/2.jpg);
+}
+.tercera {
+    background-image: url(img/3.jpg);
+}
+.cuarta {
+    background-image: url(img/4.jpg);
+}
+.quinta {
+    background-image: url(img/5.jpg);
+}
+
+/* Tenemos que esconder las diapositivas por defecto */
+.diapositivas {
+    display: none;
+}
+
+/* Botones Siguiente/Anterior */
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* mover el botón Siguiente a la derecha */
+.siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* al poner el cursor sobre los botones, añadir un fondo negro con un poco de transparencia */
+.anterior:hover, .siguiente:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Texto de diapositiva */
+.texto {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.numero {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Los puntos */
+.punto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.activo, .punto:hover {
+    background-color: #717171;
+}
+
+/* animación */
+.fade {
+    animation: fade 1.5s;
+}
+@keyframes fade {
+    from {opacity: .6;}
+    to {opacity: 1;}
+}
+
+.contenedor-puntos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

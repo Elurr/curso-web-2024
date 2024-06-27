@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animar con clases</title>
+</head>
+<style>
+    #container {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        background-color: azure;
+    }
+
+    #square {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: darkslateblue;
+
+        transition: all 1s;
+        /* transition anima los cambios del css */
+
+        left: 0;
+        top: 0;
+    }
+
+    #square.derecha {
+        /* este selector tiene mayor especificidad que sólo la id */
+        left: 450px;
+    }
+    .abajo {
+        /* un selector de clase no tiene mayor especificidad que uno de id, por lo que tiene menor prioridad */
+        top: 450px !important;
+        /* !important le da prioridad máxima a una propiedad */
+    }
+</style>
+<body>
+    <h1>Animar objetos con JavaScript usando clases</h1>
+
+    <p>
+        <button onclick="moveH()">Mover horizontal</button>
+        <button onclick="moveV()">Mover vertical</button>
+    </p>
+    <div id="container">
+        <div id="square"></div>
+    </div>
+</body>
+<script>
+    let square = document.querySelector('#square');
+    // identificamos el cuadrado
+
+    function moveH() {
+        square.classList.toggle('derecha');
+        // esta función añade o quita la clase 'derecha';
+    }
+    function moveV() {
+        square.classList.toggle('abajo');
+        // esta función añade o quita la clase 'abajo';
+    }
+</script>
+</html>

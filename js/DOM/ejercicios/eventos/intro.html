@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos con DOM</title>
+</head>
+<body>
+    <h1>Eventos en JavaScript</h1>
+
+    <p>Ejemplos de eventos:</p>
+
+    <ul>
+        <li onclick="this.innerHTML = 'Oh, vaya...'">Cuando el usuario clica en un botón (onclick).</li>
+        <li onmouseover="this.innerHTML = 'No me toques!'" onmouseout="this.innerHTML = 'Gracias.'">Cuando el usuario pasa el cursor sobre un elementos (mouseover).</li>
+        <li>Cuando el cursor sale de un elemento (mouseout).</li>
+        <li>Cuando un elemento (la web, una img) termina de cargar (onload). </li>
+        <li>Cuando el usuario pulsa una tecla (keydown) o la suelta (keyup).</li>
+        <li>Cuando un input es alterado (oninput).</li>
+        <li>Cuando se envía un formulario (onsubmit).</li>
+    </ul>
+
+    <p onclick="displayDate()" id="parrafo1">Haz clic en este texto para mostrar la fecha.</p>
+    <script>
+        function displayDate() {
+            // codigo del parrafo = Date();
+            let parrafo = document.getElementById('parrafo1');
+
+            parrafo.innerHTML = Date();
+        }
+    </script>
+
+    <h2>mouseover y mouseout</h2>
+    <p>Una imagen que cambia cuando pasamos el ratón por ella y vuelve a su estado original al salir el cursor.</p>
+
+    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="" 
+    width="" height="350"
+    onmouseover="this.src = 'https://media.cnn.com/api/v1/images/stellar/prod/131023161706-travel-cats-kalkan-1.jpg'"
+    onmouseout="this.src = 'https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg'">
+
+
+    <h2>oninput</h2>
+    <p>Evento que cuenta los caracteres del valor de un input cuando lo cambiamos.</p>
+    <p>
+        <input type="text" 
+        id="input1"
+        oninput="contar()"
+        onchange=""
+        onfocus="">
+    </p>
+
+    <p id="textoInput">hola</p>
+    <script>
+        let input = document.getElementById('input1');
+    
+        function contar() {
+            let texto = 'Número de caracteres del input: ';
+            let contenido = input.value;
+            let numero = contenido.length;
+            let parrafo = document.getElementById('textoInput');
+            parrafo.innerHTML = texto + numero;
+        }
+    </script>
+
+    
+</body>
+</html>
